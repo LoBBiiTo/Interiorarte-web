@@ -1,0 +1,1249 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diseño Interiorarte - Diseño de Interiores Profesional</title>
+    <link rel="icon" href="Logo 4.png" type="image/png" />
+    <meta property="og:title" content="Diseño Interiorarte - Diseño de Interiores Profesional" />
+    <meta property="og:description" content="Diseño de interiores personalizado que refleja tu estilo y mejora tu bienestar. Creamos espacios funcionales, estéticos y llenos de personalidad." />
+    <meta property="og:image" content="https://static.readdy.ai/image/d36e6e192c00d2ce50b1f7075585aa69/07e08a648875f225f0100bfb581a6466.png" />
+    <meta property="og:url" content="https://interiorarte.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Diseño Interiorarte" />
+    <meta name="description" content="Diseño de interiores personalizado que refleja tu estilo y mejora tu bienestar. Creamos espacios funcionales, estéticos y llenos de personalidad." />
+    <meta name="keywords" content="Diseño de interiores, decoración, asesoría, espacios personalizados, diseño funcional, diseño estético" />
+    <meta name="author" content="Interiorarte" />
+    <meta name="robots" content="index, follow" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Diseño Interiorarte - Diseño de Interiores Profesional" />
+    <meta name="twitter:description" content="Diseño de interiores personalizado que refleja tu estilo y mejora tu bienestar. Creamos espacios funcionales, estéticos y llenos de personalidad." />
+    <meta name="twitter:image" content="https://static.readdy.ai/image/d36e6e192c00d2ce50b1f7075585aa69/07e08a648875f225f0100bfb581a6466.png" />
+    <meta name="twitter:site" content="@interiorarte" />
+    <meta name="twitter:creator" content="@interiorarte" />
+    <meta name="theme-color" content="#AB9887" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Diseño Interiorarte" />
+    <meta name="application-name" content="Diseño Interiorarte" />
+    <meta name="msapplication-TileColor" content="#AB9887" />
+    <meta name="msapplication-TileImage" content="https://static.readdy.ai/image/d36e6e192c00d2ce50b1f7075585aa69/07e08a648875f225f0100bfb581a6466.png" />
+    <meta name="msapplication-config" content="https://interiorarte.com/browserconfig.xml" />
+
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: { primary: "#AB9887", secondary: "#E1E1DF", dark: "#28282A" },
+            borderRadius: {
+              none: "0px",
+              sm: "4px",
+              DEFAULT: "8px",
+              md: "12px",
+              lg: "16px",
+              xl: "20px",
+              "2xl": "24px",
+              "3xl": "32px",
+              full: "9999px",
+              button: "8px",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+    />
+    <style>
+      :where([class^="ri-"])::before { content: "\f3c2"; }
+      
+      body {
+      font-family: 'Poppins', sans-serif;
+      scroll-behavior: smooth;
+      }
+      h1, h2, h3, h4, h5 {
+      font-family: 'Playfair Display', serif;
+      }
+      .logo-font {
+      font-family: 'Pacifico', serif;
+      }
+      .hero-section {
+      background-image: url('https://readdy.ai/api/search-image?query=elegant%2520interior%2520design%2520living%2520room%2520with%2520soft%2520beige%2520and%2520gray%2520tones%252C%2520modern%2520furniture%252C%2520large%2520windows%2520with%2520natural%2520light%252C%2520minimalist%2520aesthetic%252C%2520plants%252C%2520clean%2520lines%252C%2520professional%2520photography%252C%2520no%2520people%252C%2520spacious%2520room%252C%2520high-end%2520design%252C%2520neutral%2520palette&width=1600&height=900&seq=hero1&orientation=landscape');
+      background-size: cover;
+      background-position: center;
+      }
+      .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(171, 152, 135, 0.2);
+      }
+      .testimonial-card {
+      transition: all 0.3s ease;
+      }
+      .testimonial-card:hover {
+      transform: scale(1.02);
+      }
+      input:focus, textarea:focus {
+      outline: none;
+      border-color: #AB9887;
+      }
+      .custom-checkbox {
+      position: relative;
+      padding-left: 30px;
+      cursor: pointer;
+      }
+      .custom-checkbox input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      }
+      .checkmark {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 20px;
+      width: 20px;
+      background-color: #fff;
+      border: 2px solid #AB9887;
+      border-radius: 4px;
+      }
+      .custom-checkbox input:checked ~ .checkmark:after {
+      content: "";
+      position: absolute;
+      display: block;
+      left: 6px;
+      top: 2px;
+      width: 5px;
+      height: 10px;
+      border: solid #AB9887;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+      }
+    </style>
+  </head>
+  <body class="bg-white">
+    <!-- Header -->
+    <header class="fixed w-full bg-dark shadow-sm z-50">
+      <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+        <a href="#inicio" class="flex items-center">
+          <img
+            src="Logo 4.png"
+            alt="Interiorarte Logo"
+            class="h-12 w-12"
+          />
+          <span class="text-2xl font-bold text-white font-sans ml-2 logo-font">DISEÑO_INTERIORARTE</span>
+        </a>
+        <nav class="hidden md:flex space-x-8">
+          <a href="#inicio" class="text-white hover:text-gray-300 transition-colors">Inicio</a>
+          <a href="#sobre-nosotros" class="text-white hover:text-gray-300 transition-colors">Sobre nosotros</a>
+          <a href="#servicios" class="text-white hover:text-gray-300 transition-colors">Servicios</a>
+          <a href="#portfolio" class="text-white hover:text-gray-300 transition-colors">Portfolio</a>
+          <a href="#testimonios" class="text-white hover:text-gray-300 transition-colors">Testimonios</a>
+          <a href="#contacto" class="text-white hover:text-gray-300 transition-colors">Contacto</a>
+        </nav>
+        <button
+          class="md:hidden w-10 h-10 flex items-center justify-center text-white"
+          id="mobile-menu-button">
+          <i class="ri-menu-line ri-2x"></i>
+        </button>
+      </div>
+      <!-- Mobile Menu -->
+      <div
+        class="md:hidden hidden bg-dark w-full absolute top-16 left-0 shadow-md z-50"
+        id="mobile-menu">
+        <div class="container mx-auto px-4 py-2 flex flex-col space-y-4">
+          <a href="#inicio" class="text-white hover:text-gray-300 py-2 border-b border-secondary">Inicio</a>
+          <a href="#sobre-nosotros" class="text-white hover:text-gray-300 py-2 border-b border-secondary">Sobre nosotros</a>
+          <a href="#servicios" class="text-white hover:text-gray-300 py-2 border-b border-secondary">Servicios</a>
+          <a href="#portfolio" class="text-white hover:text-gray-300 py-2 border-b border-secondary">Portfolio</a>
+          <a href="#testimonios" class="text-white hover:text-gray-300 py-2 border-b border-secondary">Testimonios</a>
+          <a href="#contacto" class="text-white hover:text-gray-300 py-2">Contacto</a>
+        </div>
+      </div>
+    </header>
+    <!-- Hero Section -->
+    <section
+      id="inicio"
+      class="hero-section min-h-screen flex items-center pt-16"
+    >
+      <div class="container mx-auto px-4 w-full">
+        <div
+          class="bg-white bg-opacity-90 max-w-2xl p-8 md:p-12 rounded-lg shadow-lg"
+        >
+          <h1 class="text-4xl md:text-5xl font-bold text-dark mb-4">
+            Transforma tu espacio, <br />transforma tu vida
+          </h1>
+          <p class="text-lg mb-8 text-gray-700">
+            Diseño de interiores personalizado que refleja tu estilo y mejora tu
+            bienestar. Creamos espacios funcionales, estéticos y llenos de
+            personalidad.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a
+              href="#servicios"
+              class="bg-primary text-white px-8 py-3 !rounded-button font-medium hover:bg-opacity-90 transition-all whitespace-nowrap text-center"
+              >Nuestros Servicios</a
+            >
+            <a
+              href="#contacto"
+              class="border-2 border-primary text-primary px-8 py-3 !rounded-button font-medium hover:bg-primary hover:text-white transition-all whitespace-nowrap text-center"
+              >Contactar</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- Sobre nosotros Section -->
+<section id="sobre-nosotros" class="py-20 bg-secondary bg-opacity-20">
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold text-dark mb-2">
+        Sobre nosotros
+      </h2>
+      <div class="w-20 h-1 bg-primary mx-auto">
+      </div>
+    </div>
+    <div class="slider-container max-w-6xl mx-auto relative overflow-hidden">
+      <!-- Slide 1 -->
+      <div class="slider-item absolute top-0 left-0 w-full h-full transition-all duration-500 ease-in-out">
+        <div class="flex flex-col md:flex-row gap-12 items-center h-full">
+          <div class="md:w-1/2 h-[500px]">
+            
+            <img
+              src="assets/servicios.jpg"
+              alt="Diseñadora de Interiores"
+              class="rounded-lg shadow-lg w-full h-full object-cover object-top"
+            />
+          </div>
+          <div class="md:w-full h-full">
+            <div class="bg-white p-8 rounded-lg shadow-lg">
+            <h3 class="text-2xl font-semibold text-dark mb-4">
+              Pasión por los espacios que inspiran
+            </h3>
+            <p class="text-gray-700 mb-6">
+              Diseñamos espacios que van más allá de lo estético: buscamos mejorar 
+              la calidad de vida de quienes los habitan. Con una sólida formación profesional 
+              y años de experiencia, transformamos cada ambiente en un lugar funcional, confortable y lleno de personalidad.
+            </p>
+            <p class="text-gray-700 mb-6">
+              Nos enfocamos en escuchar con atención a cada cliente para entender sus necesidades,
+              estilo de vida y gustos. A partir de ahí, creamos diseños únicos y personalizados que reflejan su esencia.
+            </p>
+            <p class="text-gray-700 mb-6">
+              Creemos que el buen diseño de interiores debe estar al alcance de todos. Por eso, ofrecemos distintas modalidades 
+              de servicio que se adaptan a una amplia variedad de presupuestos, sin comprometer la calidad ni el impacto de cada proyecto.
+            </p>
+            <div class="grid grid-cols-2 gap-4 mb-8">
+              <div class="flex items-start">
+                <div
+                class="w-10 h-10 flex items-center justify-center bg-primary bg-opacity-20 rounded-full mr-3"
+                >
+                <i class="ri-home-heart-line text-primary"></i>
+              </div>
+              <div>
+                <h4 class="font-semibold text-dark">
+                  Diseño Personalizado
+                </h4>
+                <p class="text-sm text-gray-600">
+                  Soluciones únicas para cada cliente
+                </p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <div
+              class="w-10 h-10 flex items-center justify-center bg-primary bg-opacity-20 rounded-full mr-3"
+              >
+              <i class="ri-palette-line text-primary"></i>
+            </div>
+            <div>
+                  <h4 class="font-semibold text-dark">
+                    Estética y Funcionalidad
+                  </h4>
+                  <p class="text-sm text-gray-600">
+                    El equilibrio perfecto
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start">
+                <div
+                class="w-10 h-10 flex items-center justify-center bg-primary bg-opacity-20 rounded-full mr-3"
+                >
+                <i class="ri-funds-box-line text-primary"></i>
+              </div>
+              <div>
+                <h4 class="font-semibold text-dark">
+                    Optimización de Espacios
+                  </h4>
+                  <p class="text-sm text-gray-600">
+                    Aprovechamiento máximo
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start">
+                <div
+                class="w-10 h-10 flex items-center justify-center bg-primary bg-opacity-20 rounded-full mr-3"
+                >
+                <i class="ri-plant-line text-primary"></i>
+              </div>
+              <div>
+                <h4 class="font-semibold text-dark">Diseño Sostenible</h4>
+                <p class="text-sm text-gray-600">
+                  Respetuoso con el medio ambiente
+                </p>
+              </div>
+            </div>
+          </div>
+            <a
+            href="#contacto"
+            class="inline-block bg-primary text-white px-8 py-3 !rounded-button font-medium hover:bg-opacity-90 transition-all whitespace-nowrap"
+            >Trabajemos Juntos</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+      <!-- Slide 2 -->
+      <div class="slider-item absolute top-0 left-0 w-full h-full hidden transition-all duration-500 ease-in-out">
+        <div class="flex flex-col md:flex-row gap-12 items-center h-full">
+          <div class="md:w-1/2 h-[500px]">
+            <img
+            src="assets/perfil.jpg"
+              alt="Diseñadora con Cliente"
+              class="rounded-lg shadow-lg w-full h-full object-cover object-top"
+            />
+          </div>
+          <div class="md:w-full h-full">
+            <div class="bg-white p-8 rounded-lg shadow-lg">
+              <h3 class="text-2xl font-semibold text-dark mb-4">
+                Lic. Daiana Benitez
+              </h3>
+              <p class="text-gray-600 mb-6">Diseñadora de Interiores</p>
+
+              <p class="text-gray-700 mb-6">
+                Mi nombre es Daiana, soy Licenciada en Diseño de Interiores egresada de la Universidad de Morón y Maestra Mayor de Obras. 
+                Tengo 26 años, vivo en Buenos Aires, pero diseño para cualquier parte del mundo.
+              </p>
+              <ul class="space-y-4">
+                <li class="flex items-start">
+                  <i
+                    class="ri-graduation-cap-line text-primary mr-3 mt-1"
+                  ></i>
+                  <span
+                    >Licenciada en Diseño de Interiores y Maestra Mayor de Obras - Universidad de
+                    Morón.</span
+                  >
+                </li>
+              
+                <li class="flex items-start">
+                  <i class="ri-medal-line text-primary mr-3 mt-1"></i>
+                  <span
+                    >A lo largo de los años tuve la oportunidad de trabajar junto a profesionales del rubro y en reconocidos locales de decoración, experiencias que me permitieron nutrirme, aprender y crecer.</span
+                  >
+                </li>
+                <li class="flex items-start">
+                  <i class="ri-global-line text-primary mr-3 mt-1"></i>
+                  <span
+                    >Hoy, a través de Interiorarte, puedo acompañar a cada cliente en su camino de crear espacios que reflejen su esencia.</span
+                  >
+                </li>
+              </ul>
+              <div class="mt-8">
+                <a
+                  href="#contacto"
+                  class="inline-block bg-primary text-white px-8 py-3 !rounded-button font-medium hover:bg-opacity-90 transition-all whitespace-nowrap"
+                  >Contáctame</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Botones de navegación -->
+    <div class="flex justify-center mt-8 space-x-2">
+      <button class="slider-dot w-3 h-3 rounded-full bg-primary opacity-100"></button>
+      <button class="slider-dot w-3 h-3 rounded-full bg-primary opacity-40"></button>
+    </div>
+  </div>
+</section>
+<style>
+  .slider-container {
+    position: relative;
+    overflow: hidden;
+    height: 600px; /* Altura ajustada al contenido */
+  }
+  
+  .slider-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Ajuste para imágenes */
+  .slider-item img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Posicionamiento de puntos */
+  .slider-dot {
+    cursor: pointer;
+  }
+  </style>
+<!-- Servicios Section -->
+    <section id="servicios" class="py-20">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-dark mb-2">
+            Nuestros Servicios
+          </h2>
+          <div class="w-20 h-1 bg-primary mx-auto mb-4"></div>
+          <p class="text-gray-700 max-w-2xl mx-auto">
+            Ofrecemos soluciones de diseño adaptadas a tus necesidades, desde
+            consultas rápidas hasta proyectos integrales.
+          </p>
+        </div>
+        <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <!-- Servicio 1 -->
+          <div
+            class="service-card bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300">
+            <div
+              class="h-48 bg-primary bg-opacity-10 flex items-center justify-center">
+              <div
+                class="w-20 h-20 flex items-center justify-center bg-primary bg-opacity-20 rounded-full">
+                <i class="ri-home-gear-line ri-2x text-primary"></i>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-dark mb-3">
+                Asesoría Integral
+              </h3>
+              <p class="text-gray-700 mb-4">
+                ¿Que incluye este servicio?
+              </p>
+              <ul class="mb-6 space-y-2">
+                <li class="flex items-start">
+                  <i class="ri-check-line text-primary mr-2 mt-1"></i>
+                  <span class="text-gray-700"
+                    >Un diagnostico del estado actual del espacio a trabajar destacando los pro y los contras del mismo.
+
+                    Una reunion virtual de 1hs, para poder conocer el espacio, obtener soluciones personalizadas y tips para tus dudas de diseño.
+                    </span>
+                </li>
+                <li class="flex items-start">
+                  <i class="ri-check-line text-primary mr-2 mt-1"></i>
+                  <span class="text-gray-700">Plano de tu espacio con la distribución del mobiliario y deco.
+                  </span>
+                </li>
+                <li class="flex items-start">
+                  <i class="ri-check-line text-primary mr-2 mt-1"></i>
+                  <span class="text-gray-700">Lista de compra con sugerencia de proveedores online.
+                  </span>
+                </li>
+                <li class="flex items-start">
+                  <i class="ri-check-line text-primary mr-2 mt-1"></i>
+                  <span class="text-gray-700">Detalles de revestimientos, pisos y pinturas con marca y código, como asi tambien cantidad necesaria.
+                  </span>
+                </li>
+                <li class="flex items-start">
+                  <i class="ri-check-line text-primary mr-2 mt-1"></i>
+                  <span class="text-gray-700">Diseño y realización de mobiliario a medida, con sus respectivos planos y detalles de materiales (Planillas listas para que puedas consultar cotización).
+                  </span>
+                </li>
+                <li class="flex items-start">
+                  <i class="ri-check-line text-primary mr-2 mt-1"></i>
+                  <span class="text-gray-700">Imagenes fotorrealistas del espacio (Renders).
+                  </span>
+                </li>
+                  <p class="text-gray-700"> <strong>PLUS!</strong> recorrido virtual del espacio para que puedas sumergirte y recorrer antes de que cobre vida.
+                  </p>
+              </ul>
+              <a
+                href="https://forms.gle/r3VDzjiAYjvTf1eC6"
+                target="_blank"
+                class="block text-center bg-primary text-white px-6 py-3 !rounded-button font-medium hover:bg-opacity-90 transition-all whitespace-nowrap"
+                >Solicitar Asesoría Integral</a>
+            </div>
+          </div>
+          <!-- Servicio 2 -->
+          <div
+            class="service-card bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300">
+            <div
+              class="h-48 bg-primary bg-opacity-10 flex items-center justify-center">
+              <div
+                class="w-20 h-20 flex items-center justify-center bg-primary bg-opacity-20 rounded-full">
+                <i class="ri-timer-flash-line ri-2x text-primary"></i>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-dark mb-3">Asesoría Express</h3>
+              <p class="text-gray-700 mb-4">
+                Una solución rápida y accesible para quienes necesitan
+                orientación profesional para renovar un espacio específico o
+                resolver dudas puntuales sobre diseño interior.
+              </p>
+              <p class="text-gray-700 mb-4">
+                ¿Que incluye este servicio?
+              </p>
+              <ul class="mb-6 space-y-2">
+                <li class="flex items-start">
+                  <i class="ri-check-line text-primary mr-2 mt-1"></i>
+                  <span class="text-gray-700"
+                    >Una evaluación detallada de tu espacio, analizando distribución, funcionalidad y estética general. 
+                  </span>
+                </li>
+                <p class="text-gray-700 mb-4">
+                  Entrega de un documento digital (pdf) donde incluirá: 
+                </p>
+                <li class="flex items-start">
+                  <i class="ri-check-line text-primary mr-2 mt-1"></i>
+                  <span class="text-gray-700">Un resumen de todos los detalles charlados durante la reunión.                   
+                  </span>
+                </li>
+                <li class="flex items-start">
+                  <i class="ri-check-line text-primary mr-2 mt-1"></i>
+                  <span class="text-gray-700">Una elección de paleta de colores y materialidad. 
+                  </span>
+                </li>
+                <li class="flex items-start">
+                  <i class="ri-check-line text-primary mr-2 mt-1"></i>
+                  <span class="text-gray-700">Tablero de ideas (Moodboard) con fotos e imágenes donde detallara muebles y objetos de decoración para que te pueda servir como guía de estilo.
+                  </span>
+                </li>
+                <p><strong>PLUS!</strong> acompañamiento pos-reunion donde vas a poder contar con 15 días de consultas adicionales via mensajería para que tu proyecto avance con éxito!!
+                </p>
+              </ul>
+              <p class="text-gray-700 mb-4">
+                ¿Que <strong>NO</strong> incluye este servicio?
+              </p>
+              <ul class="mb-6 space-y-2">
+                <li class="flex items-start">
+                  <i class="ri-check-line text-primary mr-2 mt-1"></i>
+                  <span class="text-gray-700"
+                    >Este pack NO INCLUYE propuesta en 3d, ni imágenes fotorrealistas del espacio, como así tampoco planos del espacio. 
+                  </span>
+                </li>
+              <a
+                href="https://forms.gle/5CaTmZCKNcCqVutx7"
+                target="_blank"
+                class="block text-center bg-primary text-white px-6 py-3 !rounded-button font-medium hover:bg-opacity-90 transition-all whitespace-nowrap"
+                >Solicitar Asesoría Express</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-secondary bg-opacity-20">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-dark mb-2">
+            Portfolio
+          </h2>
+          <div class="w-20 h-1 bg-primary mx-auto mb-4"></div>
+          <p class="text-gray-700 max-w-2xl mx-auto">
+            Descubre algunos de nuestros proyectos más destacados y déjate
+            inspirar por las posibilidades.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Proyecto 1 -->
+          <div class="group relative overflow-hidden rounded-lg shadow-lg">
+            <img
+              src="assets/Sala de estar.jpg"
+              alt="Proyecto de Sala de Estar"
+              class="w-full h-64 object-cover object-top transition-transform duration-500 group-hover:scale-110"/>
+            <div
+              class="absolute inset-0 bg-dark bg-opacity-0 group-hover:bg-opacity-70 transition-all duration-300 flex items-center justify-center">
+              <div
+                class="px-4 py-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-center">
+                <h3 class="text-white text-xl font-semibold mb-2">
+                  Sala de Estar Moderna
+                </h3>
+                <p class="text-white text-sm">
+                  Espacio acogedor y funcional
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 2 -->
+          <div class="group relative overflow-hidden rounded-lg shadow-lg">
+            <img
+              src="assets/Dormitorio infantil.jpg"
+              alt="Proyecto de Dormitorio"
+              class="w-full h-64 object-cover object-top transition-transform duration-500 group-hover:scale-110"/>
+            <div
+              class="absolute inset-0 bg-dark bg-opacity-0 group-hover:bg-opacity-70 transition-all duration-300 flex items-center justify-center">
+              <div
+                class="px-4 py-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-center">
+                <h3 class="text-white text-xl font-semibold mb-2">
+                  Dormitorio Infantil
+                </h3>
+                <p class="text-white text-sm">
+                  Espacio divertido y funcional
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 3 -->
+          <div class="group relative overflow-hidden rounded-lg shadow-lg">
+            <img
+              src="assets/Comedor.jpg"
+              alt="Proyecto de Comedor"
+              class="w-full h-64 object-cover object-top transition-transform duration-500 group-hover:scale-110"/>
+            <div
+              class="absolute inset-0 bg-dark bg-opacity-0 group-hover:bg-opacity-70 transition-all duration-300 flex items-center justify-center">
+              <div
+                class="px-4 py-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-center">
+                <h3 class="text-white text-xl font-semibold mb-2">
+                  Comedor Elegante
+                </h3>
+                <p class="text-white text-sm">
+                  Espacio para compartir con estilo
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 4 -->
+          <div class="group relative overflow-hidden rounded-lg shadow-lg">
+            <img
+              src="assets/Dormitorio principal.jpg"
+              alt="Proyecto de Dormitorio Principal"
+              class="w-full h-64 object-cover object-top transition-transform duration-500 group-hover:scale-110"
+            />
+            <div
+              class="absolute inset-0 bg-dark bg-opacity-0 group-hover:bg-opacity-70 transition-all duration-300 flex items-center justify-center"
+            >
+              <div
+                class="px-4 py-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-center"
+              >
+                <h3 class="text-white text-xl font-semibold mb-2">
+                  Dormitorio Principal
+                </h3>
+                <p class="text-white text-sm">
+                  Espacio de descanso y relax
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 5 -->
+          <div class="group relative overflow-hidden rounded-lg shadow-lg">
+            <img
+              src="assets/Living.jpg"
+              alt="Proyecto de Oficina en Casa"
+              class="w-full h-64 object-cover object-top transition-transform duration-500 group-hover:scale-110"
+            />
+            <div
+              class="absolute inset-0 bg-dark bg-opacity-0 group-hover:bg-opacity-70 transition-all duration-300 flex items-center justify-center"
+            >
+              <div
+                class="px-4 py-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-center"
+              >
+                <h3 class="text-white text-xl font-semibold mb-2">
+                  Entrada + Living
+                </h3>
+                <p class="text-white text-sm">
+                  Entrada con estilo y living acogedor
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 6 -->
+          <div class="group relative overflow-hidden rounded-lg shadow-lg">
+            <img
+              src="assets/Terraza.jpg"
+              alt="Proyecto de Terraza"
+              class="w-full h-64 object-cover object-top transition-transform duration-500 group-hover:scale-110"
+            />
+            <div
+              class="absolute inset-0 bg-dark bg-opacity-0 group-hover:bg-opacity-70 transition-all duration-300 flex items-center justify-center"
+            >
+              <div
+                class="px-4 py-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-center"
+              >
+                <h3 class="text-white text-xl font-semibold mb-2">
+                  Terraza Moderna
+                </h3>
+                <p class="text-white text-sm">
+                  Espacio al aire libre para disfrutar
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-12">
+          <a
+            href="#contacto"
+            class="inline-block bg-primary text-white px-8 py-3 !rounded-button font-medium hover:bg-opacity-90 transition-all whitespace-nowrap"
+            >Quiero un Proyecto Así</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- Testimonios Section -->
+    <section id="testimonios" class="py-20">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-dark mb-2">
+            Testimonios
+          </h2>
+          <div class="w-20 h-1 bg-primary mx-auto mb-4"></div>
+          <p class="text-gray-700 max-w-2xl mx-auto">
+            Lo que nuestros clientes dicen sobre nuestros servicios.
+          </p>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          <!-- Testimonio 1 -->
+          <div class="testimonial-card bg-white p-6 rounded-lg shadow-lg">
+            <div class="flex items-center mb-4">
+              <div
+                class="w-12 h-12 bg-primary bg-opacity-20 rounded-full flex items-center justify-center mr-4"
+              >
+                <span class="text-primary font-bold">MG</span>
+              </div>
+              <div>
+                <h4 class="font-semibold text-dark">Martina González</h4>
+                <p class="text-sm text-gray-600">Buenos Aires</p>
+              </div>
+            </div>
+            <div class="flex text-primary mb-3">
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+            </div>
+            <p class="text-gray-700">
+              "La asesoría express superó mis expectativas. En poco tiempo
+              recibí ideas muy valiosas que transformaron completamente mi
+              living. El servicio fue profesional y personalizado, recomiendo
+              100%."
+            </p>
+          </div>
+          <!-- Testimonio 2 -->
+          <div class="testimonial-card bg-white p-6 rounded-lg shadow-lg">
+            <div class="flex items-center mb-4">
+              <div
+                class="w-12 h-12 bg-primary bg-opacity-20 rounded-full flex items-center justify-center mr-4"
+              >
+                <span class="text-primary font-bold">FC</span>
+              </div>
+              <div>
+                <h4 class="font-semibold text-dark">Federico Campos</h4>
+                <p class="text-sm text-gray-600">Córdoba</p>
+              </div>
+            </div>
+            <div class="flex text-primary mb-3">
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+            </div>
+            <p class="text-gray-700">
+              "Contratamos la asesoría integral para nuestra casa y quedamos
+              encantados. Cada espacio refleja exactamente lo que queríamos pero
+              no sabíamos cómo lograr. La atención al detalle y la capacidad de
+              entender nuestras necesidades fue impresionante."
+            </p>
+          </div>
+          <!-- Testimonio 3 -->
+          <div class="testimonial-card bg-white p-6 rounded-lg shadow-lg">
+            <div class="flex items-center mb-4">
+              <div
+                class="w-12 h-12 bg-primary bg-opacity-20 rounded-full flex items-center justify-center mr-4"
+              >
+                <span class="text-primary font-bold">LR</span>
+              </div>
+              <div>
+                <h4 class="font-semibold text-dark">Laura Rodríguez</h4>
+                <p class="text-sm text-gray-600">Rosario</p>
+              </div>
+            </div>
+            <div class="flex text-primary mb-3">
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-half-fill"></i>
+            </div>
+            <p class="text-gray-700">
+              "Mi departamento pequeño se transformó en un espacio funcional y
+              hermoso gracias a las ideas creativas que me dieron. Aprovecharon
+              cada centímetro sin sacrificar la estética. Excelente servicio y
+              muy accesible."
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contacto Section -->
+    <section id="contacto" class="py-20 bg-secondary bg-opacity-20">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-dark mb-2">
+            Contacto
+          </h2>
+          <div class="w-20 h-1 bg-primary mx-auto mb-4"></div>
+          <p class="text-gray-700 max-w-2xl mx-auto">
+            ¿Listo para transformar tu espacio? Contáctanos y comencemos a
+            trabajar juntos en tu proyecto.
+          </p>
+        </div>
+        <div class="flex flex-col lg:flex-row gap-12 max-w-6xl mx-auto">
+          <!-- Formulario de contacto -->
+          <div class="lg:w-3/5 bg-white p-8 rounded-lg shadow-lg">
+            <h3 class="text-2xl font-semibold text-dark mb-6">
+              Envíanos un mensaje
+            </h3>
+            <form
+            action="https://formspree.io/f/xgvkooka"
+            method="POST"
+            id="contact-form"
+            class="space-y-6"
+            >
+              <div>
+              <label for="nombre" class="block text-gray-700 font-medium mb-2">Nombre</label>
+              <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                required
+                class="w-full border border-gray-300 rounded-md px-4 py-3 focus:border-primary transition-colors"
+                placeholder="Tu nombre"
+              />
+              </div>
+              <div>
+              <label for="email" class="block text-gray-700 font-medium mb-2">Correo electrónico</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                class="w-full border border-gray-300 rounded-md px-4 py-3 focus:border-primary transition-colors"
+                placeholder="tu@email.com"
+              />
+              </div>
+              <div>
+              <label for="mensaje" class="block text-gray-700 font-medium mb-2">Mensaje</label>
+              <textarea
+                id="mensaje"
+                name="mensaje"
+                rows="5"
+                required
+                class="w-full border border-gray-300 rounded-md px-4 py-3 focus:border-primary transition-colors"
+                placeholder="Cuéntanos sobre tu proyecto o consulta"
+              ></textarea>
+              </div>
+              <button
+              type="submit"
+              class="bg-primary text-white px-8 py-3 !rounded-button font-medium hover:bg-opacity-90 transition-all w-full"
+              >
+              Enviar mensaje
+              </button>
+              <div class="space-y-6"></div>
+              <div>
+                <label class="custom-checkbox">
+                  <input type="checkbox" required />
+                  <span class="checkmark"></span>
+                  <span class="text-gray-700 ml-2">
+                    Acepto la <a href="Terminos y condiciones del servicio.pdf" target="_blank">política de privacidad</a>
+                    </span>
+                </label>
+              </div>
+            </form>
+          </div>
+          <!-- Información de contacto -->
+          <div class="lg:w-2/5">
+            <div class="bg-white p-8 rounded-lg shadow-lg mb-8">
+              <h3 class="text-2xl font-semibold text-dark mb-6">
+                Información de contacto
+              </h3>
+              <div class="space-y-4">
+                <div class="flex items-start">
+                  <div
+                    class="w-10 h-10 flex items-center justify-center bg-primary bg-opacity-20 rounded-full mr-4 mt-1"
+                  >
+                    <i class="ri-mail-line text-primary"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-dark">Correo electrónico</h4>
+                    <a
+                      href="mailto:disenointerioarte25@gmail.com"
+                      class="text-gray-700 hover:text-primary"
+                      >disenointerioarte25@gmail.com</a
+                    >
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <div
+                    class="w-10 h-10 flex items-center justify-center bg-primary bg-opacity-20 rounded-full mr-4 mt-1"
+                  >
+                    <i class="ri-whatsapp-line text-primary"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-dark">WhatsApp</h4>
+                    <a
+                      href="https://wa.me/5491155959984" 
+                      class="text-gray-700 hover:text-primary"
+                      target="_blank"
+                      >+54 9 11 5595-9984</a
+                    >
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <div
+                    class="w-10 h-10 flex items-center justify-center bg-primary bg-opacity-20 rounded-full mr-4 mt-1"
+                  >
+                    <i class="ri-time-line text-primary"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-dark">Horario de atención</h4>
+                    <p class="text-gray-700">Lunes a Viernes: 9:00 - 18:00</p>
+                    <p class="text-gray-700">Sábados: 9:00 - 13:00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bg-white p-8 rounded-lg shadow-lg">
+              <h3 class="text-2xl font-semibold text-dark mb-6">Síguenos</h3>
+              <div class="space-y-4">
+                <a
+                  href="https://www.instagram.com/diseno_interiorarte/"
+                  target="_blank"
+                  class="flex items-center p-3 border border-gray-200 rounded-lg hover:border-primary transition-colors"
+                >
+                  <div class="w-10 h-10 flex items-center justify-center mr-4">
+                    <i class="ri-instagram-line ri-lg text-primary"></i>
+                  </div>
+                  <span class="text-gray-700">Instagram</span>
+                </a>
+                <a
+                  href="https://www.tiktok.com/@diseno_interiorarte"
+                  target="_blank"
+                  class="flex items-center p-3 border border-gray-200 rounded-lg hover:border-primary transition-colors"
+                >
+                  <div class="w-10 h-10 flex items-center justify-center mr-4">
+                    <i class="ri-tiktok-line ri-lg text-primary"></i>
+                  </div>
+                  <span class="text-gray-700">TikTok</span>
+                </a>
+                <a
+                  href="https://www.threads.com/@diseno_interiorarte"
+                  target="_blank"
+                  class="flex items-center p-3 border border-gray-200 rounded-lg hover:border-primary transition-colors"
+                >
+                  <div class="w-10 h-10 flex items-center justify-center mr-4">
+                    <i class="ri-threads-line ri-lg text-primary"></i>
+                  </div>
+                  <span class="text-gray-700">Threads</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- Footer -->
+<footer class="bg-dark text-white py-12">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col md:flex-row justify-between mb-8">
+        <div class="mb-8 md:mb-0">
+          <a href="#inicio" class="inline-block mb-4">
+            <img
+              src="https://static.readdy.ai/image/d36e6e192c00d2ce50b1f7075585aa69/79213ac0e478f98e3a3f9bb879ac1479.png"
+              alt="Interiorarte Logo"
+              class="h-12 w-12"
+            />
+          </a>
+          <p class="text-gray-400 max-w-xs">
+            Transformando espacios, creando experiencias. Diseño de interiores
+            personalizado para cada cliente.
+          </p>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Enlaces rápidos</h4>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#inicio"
+                  class="text-gray-400 hover:text-primary transition-colors"
+                  >Inicio</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#sobre-nosotros"
+                  class="text-gray-400 hover:text-primary transition-colors"
+                  >Sobre nosotros</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#servicios"
+                  class="text-gray-400 hover:text-primary transition-colors"
+                  >Servicios</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#portfolio"
+                  class="text-gray-400 hover:text-primary transition-colors"
+                  >Portfolio</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#testimonios"
+                  class="text-gray-400 hover:text-primary transition-colors"
+                  >Testimonios</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contacto"
+                  class="text-gray-400 hover:text-primary transition-colors"
+                  >Contacto</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Servicios</h4>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="https://forms.gle/r3VDzjiAYjvTf1eC6"
+                  target="_blank"
+                  class="text-gray-400 hover:text-primary transition-colors"
+                  >Asesoría Integral</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://forms.gle/5CaTmZCKNcCqVutx7"
+                  target="_blank"
+                  class="text-gray-400 hover:text-primary transition-colors"
+                  >Asesoría Express</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Contacto</h4>
+            <ul class="space-y-2">
+              <li class="flex items-center">
+                <i class="ri-mail-line mr-2 text-primary"></i>
+                <a
+                  href="mailto:disenointerioarte25@gmail.com"
+                  class="text-gray-400 hover:text-primary transition-colors"
+                  >disenointerioarte25@gmail.com</a
+                >
+              </li>
+              <li class="flex items-center">
+                <i class="ri-whatsapp-line mr-2 text-primary"></i>
+                <a
+                  href="https://wa.me/5491155959984"
+                  class="text-gray-400 hover:text-primary transition-colors"
+                  target="_blank"
+                  >+54 9 11 5595-9984</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div
+        class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center"
+      >
+        <p class="text-gray-500 text-sm mb-4 md:mb-0">
+          &copy; 2025 Diseño Interiorarte. Todos los derechos reservados.
+        </p>
+        <div class="flex space-x-4">
+          <a
+            href="https://www.instagram.com/diseno_interiorarte/"
+            target="_blank"
+            class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors"
+          >
+            <i class="ri-instagram-line text-white"></i>
+          </a>
+          <a
+            href="https://www.tiktok.com/@diseno_interiorarte"
+            target="_blank"
+            class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors"
+          >
+            <i class="ri-tiktok-line text-white"></i>
+          </a>
+          <a
+            href="https://www.threads.com/@diseno_interiorarte"
+            target="_blank"
+            class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors"
+          >
+            <i class="ri-threads-line text-white"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="flex space-x-5 justify-center mt-4">
+        <a href="Terminos y condiciones del servicio.pdf" target="_blank" class="text-gray-400 text-sm hover:text-primary transition-colors">Términos y Condiciones</a>
+      </div>
+
+  </footer>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Slider functionality 
+        const sliderContainer = document.querySelector(".slider-container");
+        const sliderItems = document.querySelectorAll(".slider-item");
+        const sliderDots = document.querySelectorAll(".slider-dot");
+        let currentSlide = 0;
+        let slideInterval;
+        function showSlide(index) {
+          sliderItems.forEach((item, i) => {
+            if (i === index) {
+              item.style.display = "block";
+              setTimeout(() => {
+                item.style.opacity = "1";
+                item.style.transform = "translateX(0)";
+              }, 50);
+            } else {
+              item.style.opacity = "0";
+              item.style.transform = "translateX(-100px)";
+              setTimeout(() => {
+                item.style.display = "none";
+              }, 500);
+            }
+          });
+          sliderDots.forEach((dot, i) => {
+            dot.classList.toggle("opacity-100", i === index);
+            dot.classList.toggle("opacity-40", i !== index);
+          });
+        }
+        function startSlideTimer() {
+          stopSlideTimer();
+          slideInterval = setInterval(() => {
+            currentSlide = (currentSlide + 1) % sliderItems.length;
+            showSlide(currentSlide);
+          }, 5000);
+        }
+        function stopSlideTimer() {
+          if (slideInterval) {
+            clearInterval(slideInterval);
+          }
+        }
+        sliderDots.forEach((dot, index) => {
+          dot.addEventListener("click", () => {
+            currentSlide = index;
+            showSlide(currentSlide);
+            startSlideTimer();
+          });
+        });
+        // Add transition styles
+        sliderItems.forEach((item) => {
+          item.style.transition = "all 0.2s ease-in-out";
+          item.style.position = "";
+          item.style.opacity = "0";
+          item.style.transform = "translateX(-80px)";
+        });
+        // Initialize slider
+        showSlide(currentSlide);
+        startSlideTimer();
+        // Pause slider on hover
+        sliderContainer.addEventListener("mouseenter", stopSlideTimer);
+        sliderContainer.addEventListener("mouseleave", startSlideTimer);
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById("mobile-menu-button");
+        const mobileMenu = document.getElementById("mobile-menu");
+        mobileMenuButton.addEventListener("click", function () {
+          mobileMenu.classList.toggle("hidden");
+        });
+        // Close mobile menu when clicking on a link
+        const mobileLinks = mobileMenu.querySelectorAll("a");
+        mobileLinks.forEach((link) => {
+          link.addEventListener("click", function () {
+            mobileMenu.classList.add("hidden");
+          });
+        });
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+          anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute("href");
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+              window.scrollTo({
+                top: targetElement.offsetTop - 80,
+                behavior: "smooth",
+              });
+            }
+          });
+        });
+      // Form submission
+      const contactForm = document.getElementById("contact-form");
+      const submitButton = contactForm.querySelector('button[type="submit"]');
+      const originalButtonText = submitButton.textContent;
+      if (contactForm) {
+        contactForm.addEventListener("submit", async function (e) {
+          e.preventDefault();
+          submitButton.disabled = true;
+          submitButton.textContent = "Enviando...";
+          try {
+            const formData = new FormData(contactForm);
+            const response = await fetch(contactForm.action, {
+              method: "POST",
+              body: formData,
+              headers: {
+                Accept: "application/json",
+              },
+            });
+            if (response.ok) {
+              // Create success message
+              const successMessage = document.createElement("div");
+              successMessage.className =
+                "fixed top-4 right-4 bg-green-500 text-white px-6 py-3 rounded shadow-lg z-50 animate-fade-in";
+              successMessage.textContent =
+                "¡Mensaje enviado con éxito! Te contactaremos pronto.";
+              document.body.appendChild(successMessage);
+              // Remove success message after 5 seconds
+              setTimeout(() => {
+                successMessage.remove();
+              }, 5000);
+              contactForm.reset();
+            } else {
+              throw new Error("Error al enviar el formulario");
+            }
+          } catch (error) {
+            // Create error message
+            const errorMessage = document.createElement("div");
+            errorMessage.className =
+              "fixed top-4 right-4 bg-red-500 text-white px-6 py-3 rounded shadow-lg z-50 animate-fade-in";
+            errorMessage.textContent =
+              "Error al enviar el mensaje. Por favor, inténtalo de nuevo.";
+            document.body.appendChild(errorMessage);
+            // Remove error message after 5 seconds
+            setTimeout(() => {
+              errorMessage.remove();
+            }, 5000);
+          }
+          submitButton.disabled = false;
+          submitButton.textContent = originalButtonText;
+        });
+      }
+    });
+  </script>
+</body>
+</html>
